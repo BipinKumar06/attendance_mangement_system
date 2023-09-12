@@ -4,6 +4,9 @@ import studentRoutes from "./routes/studentRoutes.js";
 import attendanceRoutes from "./routes/attendanceRoutes.js";
 import path from "path";
 import morgan from "morgan";
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import dotenv from "dotenv";
 import connectDB from "./config/mongoDBConfig.js";
